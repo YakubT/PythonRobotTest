@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.6 on darwin)" generated="20230515 19:46:42.055" rpa="false" schemaversion="3">
+<suite id="s1" name="Browser" source="/Users/anatoliiyakubyshyn/Documents/Solvd/new/pythonProject/browser.robot">
+<test id="s1-t1" name="Run Browser" line="14">
+<kw name="Setup chromedriver">
+<kw name="Set Environment Variable" library="OperatingSystem">
+<arg>webdriver.chrome.driver</arg>
+<arg>chromedriver</arg>
+<doc>Sets an environment variable to a specified value.</doc>
+<msg timestamp="20230515 19:46:42.145" level="INFO">Environment variable 'webdriver.chrome.driver' set to value 'chromedriver'.</msg>
+<status status="PASS" starttime="20230515 19:46:42.145" endtime="20230515 19:46:42.145"/>
+</kw>
+<status status="PASS" starttime="20230515 19:46:42.145" endtime="20230515 19:46:42.145"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230515 19:46:42.146" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20230515 19:46:42.147" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230515 19:46:42.145" endtime="20230515 19:46:47.835"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230515 19:46:47.836" endtime="20230515 19:46:47.904"/>
+</kw>
+<status status="PASS" starttime="20230515 19:46:42.145" endtime="20230515 19:46:47.904"/>
+</test>
+<status status="PASS" starttime="20230515 19:46:42.056" endtime="20230515 19:46:47.905"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Browser">Browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
