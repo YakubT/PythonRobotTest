@@ -1,4 +1,4 @@
-name: Auto workflow with playwright
+name: Manual workflow with playwright
 
 on:
   workflow_dispatch:
