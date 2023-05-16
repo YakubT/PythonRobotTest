@@ -20,6 +20,7 @@ jobs:
           pip install --upgrade robotframework-seleniumlibrary
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1.2.0
+      - run: chrome --version
       - name: Test with robot framework
         run: |
           robot browser.robot
